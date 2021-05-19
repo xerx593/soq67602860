@@ -1,5 +1,5 @@
-#Demonstrates basic checkbox usage with springboot-thymeleaf
+# Demonstrates basic checkbox usage with springboot-thymeleaf
 
-###Instructions
+### Instructions
 
-Execute `mvn spring-boot:run` and inspect [http://localhost:8080/](http://localhost:8080/)
+Execute `mvn spring-boot:run` and inspect [http://localhost:8080/](http://localhost:8080/).
