@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Thymeleaf checkbox Demo</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<form action="#" th:action="@{/}" th:object="${form}" method="post">
+<body> 
+  <table>
+    <thead>
+      <tr>
+        <th th:text="#{label.author}">Author</th>
+        <th th:text="#{label.title}">Title</th>
+        <th/>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="book : ${allBooks}">
+       <td th:text="${book.author}">author</td>
+       <td th:text="${book.title}">title</td>
+       <td>
+         <input type="checkbox" th:field="*{requestedBooks}" th:value="${book.id}" />
+       </td>
+      </tr>
+    </tbody>
+    <tfoot>
+    	  <tr>
+    	    <td colspane="3"><input type="submit"/></td>
+	      </tr>
+    <tfoot>
+</body>
+</form>
+</html>
